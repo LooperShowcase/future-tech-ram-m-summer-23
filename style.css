@@ -1,21 +1,33 @@
-.container{
-    background-color:lightblue;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
+.container {
+  background-color: lightblue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px; /* Optional padding to add some spacing */
 }
 
-button
-{
-    box-shadow: 0px 0px 10px red;
-    color:black;
-    padding: 10px;
-    border-radius: 20px;
+button {
+  box-shadow: 0px 0px 10px red;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px; /* Optional margin to add spacing between buttons */
 }
 
-button:hover
-{
-    background-color: blue;
-    cursor: pointer;
+button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px; /* Adjust the container padding for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Make the buttons full width on smaller screens */
+    margin-bottom: 5px; /* Reduce margin between buttons on smaller screens */
+  }
 }
